@@ -1,0 +1,28 @@
+<idea-plugin>
+    <id>com.walker.plugin.intellij-plugin-demo</id>
+    <name>Intellij Demo</name>
+    <vendor email="qinmu911@163.com" url="https://github.com/walker911">Personal</vendor>
+
+    <description><![CDATA[
+    <p>Learn intellij plugin demo.</p>
+    <p>reference: https://blog.xiaohansong.com/idea-plugin-development.html</p>
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="demo.hello.world" class="com.walker.plugin.HelloWorldAction" text="HelloWorld"
+                description="Say Hello Worid">
+            <add-to-group group-id="GenerateGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
