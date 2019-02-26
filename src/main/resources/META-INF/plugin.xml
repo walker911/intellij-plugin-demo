@@ -21,7 +21,7 @@
     <actions>
         <!-- Add your actions here -->
         <action id="demo.hello.world" class="com.walker.plugin.HelloWorldAction" text="HelloWorld"
-                description="Say Hello Worid">
+                description="Say Hello World">
             <add-to-group group-id="GenerateGroup" anchor="last"/>
         </action>
     </actions>
